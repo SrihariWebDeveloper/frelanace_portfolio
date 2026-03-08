@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiDownload, FiMail } from 'react-icons/fi';
 import { FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
-import profile from '../assets/IMG_5383.png';
+import assets from '../assets/assests.js';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -17,7 +17,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="mb-4"
         >
-          <img src={profile} alt="Profile" className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-purple-400 mt-24 shadow-lg" />
+          <img src={assets.image} alt="Sidharth, visual content creator wearing glasses and black jacket, professional portrait against purple gradient background with studio lighting" className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-purple-400 mt-24 shadow-lg" />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 50 }}

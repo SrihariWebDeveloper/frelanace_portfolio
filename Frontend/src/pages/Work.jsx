@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX, FiPlay, FiEye } from 'react-icons/fi';
-import work1 from '../assets/work1.png';
-import work2 from '../assets/work2.png';
-import work3 from '../assets/work3.png';
-import work4 from '../assets/work4.png';
-import work5 from '../assets/work5.png';
+import assets from '../assets/assests.js';
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -16,7 +12,7 @@ const Work = () => {
       id: 1,
       title: 'Commercial Spot',
       category: 'commercial',
-      thumbnail: work1,
+      thumbnail: assets.work1,
       videoUrl: 'https://drive.google.com/file/d/12W_WDRshM0uimRYbqkl8vUpXnklllF6U/preview',
       type: 'video',
     },
@@ -24,7 +20,7 @@ const Work = () => {
       id: 2,
       title: 'Music Video',
       category: 'music',
-      thumbnail: work2,
+      thumbnail: assets.work2,
       videoUrl: 'https://drive.google.com/file/d/1_Eg9JkCB6U4CmKi2L_PrpYDw5MSeC5Jq/preview',
       type: 'video',
     },
@@ -32,7 +28,7 @@ const Work = () => {
       id: 3,
       title: 'Poster Design',
       category: 'poster',
-      thumbnail: work3,
+      thumbnail: assets.work3,
       posterUrl: 'https://www.instagram.com/p/DTZJsugk_92/embed/',
       type: 'poster',
     },
@@ -40,7 +36,7 @@ const Work = () => {
       id: 4,
       title: 'Poster Design',
       category: 'poster',
-      thumbnail: work4,
+      thumbnail: assets.work4,
       posterUrl: 'https://www.instagram.com/p/DLpujagTBHI/embed/',
       type: 'poster',
     },
@@ -48,7 +44,7 @@ const Work = () => {
       id: 5,
       title: 'Video Edit',
       category: 'video',
-      thumbnail: work5,
+      thumbnail: assets.work5,
       videoUrl: 'https://www.instagram.com/reel/DUigjX2D7wm/embed/',
       type: 'video',
     }

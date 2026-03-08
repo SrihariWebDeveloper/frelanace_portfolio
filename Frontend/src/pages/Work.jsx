@@ -14,17 +14,17 @@ const Work = () => {
   const projects = [
     {
       id: 1,
-      title: "Commercial Spot",
-      category: "commercial",
+      title: "Commercial Edit",
+      category: "music",
       thumbnail: assets.work1,
       videoUrl:
         "https://drive.google.com/file/d/12W_WDRshM0uimRYbqkl8vUpXnklllF6U/preview",
-      type: "video",
+      type: "music",
     },
     {
       id: 2,
-      title: "Music Video",
-      category: "music",
+      title: "Commercial Edit",
+      category: "commercial",
       thumbnail: assets.work2,
       videoUrl:
         "https://drive.google.com/file/d/1_Eg9JkCB6U4CmKi2L_PrpYDw5MSeC5Jq/preview",
@@ -48,12 +48,12 @@ const Work = () => {
     },
     {
       id: 5,
-      title: "Video Edit",
+      title: "Reel Edit",
       category: "video",
       thumbnail: assets.work5,
       videoUrl: "https://www.instagram.com/reel/DUigjX2D7wm/embed/",
       type: "video",
-    },
+    }
   ];
 
   const categories = ["all", "commercial", "music", "poster", "video"];

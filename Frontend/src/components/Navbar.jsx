@@ -51,7 +51,7 @@ const Navbar = () => {
                   className={`px-3 py-2 rounded-lg transition-colors ${
                     isDark
                       ? "text-white hover:bg-white/10 hover:text-purple-400"
-                      : "text-white bg-white hover:bg-gray-200"
+                      : "text-black bg-white hover:bg-gray-200"
                   }`}
                 >
                   {item.name}
@@ -64,8 +64,8 @@ const Navbar = () => {
               onClick={toggleTheme}
               className={`p-2 rounded-lg transition ${
                 isDark
-                  ? "bg-white text-yellow-400"
-                  : "bg-white text-white border"
+                  ? "bg-gray-700 text-yellow-400"
+                  : "bg-white text-black border"
               }`}
             >
               {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
@@ -103,12 +103,15 @@ const Navbar = () => {
               isDark ? "bg-black/80 text-white" : "bg-white text-black shadow"
             }`}
           >
-            className=
-            {`block py-2 px-3 rounded-lg w-full text-left ${
-              isDark
-                ? "text-white hover:bg-white/10"
-                : "text-black bg-white hover:bg-gray-200"
-            }`}
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="block py-2 my-2 w-full text-left hover:text-purple-500"
+              >
+                {item.name}
+              </button>
+            ))}
           </motion.div>
         )}
       </div>

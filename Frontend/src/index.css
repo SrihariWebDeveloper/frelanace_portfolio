@@ -1,17 +1,15 @@
 @import "tailwindcss";
 
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base root styles */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,27 +17,32 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Body theme styles */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-height: 100vh;
+
+  @apply bg-white text-black dark:bg-slate-900 dark:text-white transition-colors duration-300;
 }
 
+/* Links */
+a {
+  font-weight: 500;
+  @apply text-indigo-500 dark:text-indigo-400;
+  text-decoration: none;
+}
+
+a:hover {
+  @apply text-indigo-600 dark:text-indigo-300;
+}
+
+/* Headings */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,27 +50,21 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+
+  @apply bg-gray-100 text-black dark:bg-gray-800 dark:text-white transition-colors duration-300;
 }
+
 button:hover {
-  border-color: #646cff;
+  @apply border-indigo-500;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+html.dark {
+  background-color: #0f172a;
 }

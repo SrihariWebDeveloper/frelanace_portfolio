@@ -4,6 +4,9 @@ import work2 from './work2.png';
 import work3 from './work3.png';
 import work4 from './work4.png';
 import work5 from './work5.png';
+import work6 from './work6.jpeg';
+import work7 from './work7.jpeg';
+import work8 from './work8.jpeg';
 
 
 
@@ -16,6 +19,9 @@ const assets = {
     work3,
     work4,
     work5,
+    work6,
+    work7,
+    work8
 };
 
 export default assets;

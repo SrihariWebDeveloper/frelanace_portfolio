@@ -34,7 +34,7 @@ const Work = () => {
       id: 3,
       title: "Poster Design",
       category: "poster",
-      thumbnail: assets.work3,
+      thumbnail: assets.work4,
       posterUrl: "https://www.instagram.com/p/DTZJsugk_92/embed/",
       type: "poster",
     },
@@ -42,7 +42,7 @@ const Work = () => {
       id: 4,
       title: "Poster Design",
       category: "poster",
-      thumbnail: assets.work4,
+      thumbnail: assets.work3,
       posterUrl: "https://www.instagram.com/p/DLpujagTBHI/embed/",
       type: "poster",
     },
@@ -53,10 +53,34 @@ const Work = () => {
       thumbnail: assets.work5,
       videoUrl: "https://www.instagram.com/reel/DUigjX2D7wm/embed/",
       type: "video",
+    },
+    {
+      id: 6,
+      title: "Thumbnail Edit",
+      category: "Thumbnails",
+      thumbnail: assets.work6,
+      videoUrl: assets.work6,
+      type: "Thumbnail",
+    },
+    {
+      id: 7,
+      title: "Thumbnail Edit",
+      category: "Thumbnails",
+      thumbnail: assets.work7,
+      videoUrl: assets.work7,
+      type: "Thumbnail",
+    },
+    {
+      id: 8,
+      title: "Thumbnail Edit",
+      category: "Thumbnails",
+      thumbnail: assets.work8,
+      videoUrl: assets.work8,
+      type: "Thumbnail",
     }
   ];
 
-  const categories = ["all", "commercial", "music", "poster", "video"];
+  const categories = ["all", "commercial", "music", "poster", "video","Thumbnails"];
 
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
@@ -174,7 +198,7 @@ const Work = () => {
                   <iframe
                     src={selectedProject.videoUrl || selectedProject.posterUrl}
                     title={selectedProject.title}
-                    className="w-full h-full rounded"
+                    className="w-11/12 h-full mx-auto rounded-lg"
                     allowFullScreen
                   />
                 </div>

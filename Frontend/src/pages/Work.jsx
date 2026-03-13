@@ -59,7 +59,7 @@ const Work = () => {
       title: "Thumbnail Edit",
       category: "Thumbnails",
       thumbnail: assets.work6,
-      videoUrl: "https://www.instagram.com/p/DTFDtpJk-fj/?igsh=NWRsaDljMW1jMzBl",
+      videoUrl: "https://www.instagram.com/reel/DTFDtpJk-fj/embed/",
       type: "Thumbnail",
     },
     {

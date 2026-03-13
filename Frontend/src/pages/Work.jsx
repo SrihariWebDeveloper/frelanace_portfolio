@@ -67,7 +67,7 @@ const Work = () => {
       title: "Thumbnail Edit",
       category: "Thumbnails",
       thumbnail: assets.work7,
-      videoUrl: "https://www.instagram.com/p/DVzfhNMj759/?igsh=Y25pbGxydDcza3d5",
+      videoUrl: "https://www.instagram.com/reel/DVzfhNMj759/embed/",
       type: "Thumbnail",
     },
     {
@@ -75,7 +75,7 @@ const Work = () => {
       title: "Thumbnail Edit",
       category: "Thumbnails",
       thumbnail: assets.work8,
-      videoUrl: "https://www.instagram.com/p/DVaW9hGj86F/?igsh=MTQzcmNvNm5hNnh2aw==",
+      videoUrl: "https://www.instagram.com/reel/DVaW9hGj86F/embed/",
       type: "Thumbnail",
     }
   ];
